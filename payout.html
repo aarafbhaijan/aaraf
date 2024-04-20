@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Payouts</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive-text.css">
+  <link rel="stylesheet" href="tooltip2.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/164add929b.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="roboto">
+  <div class="bg-gradient bg-light p-4 rounded main-container "
+    style="display: flex;flex-direction: column;align-items: start;padding-bottom:none;">
+    <div style="flex-direction: column;display: flex; align-items: start;">
+      <div class="d-flex flex-column">
+        <div class="mb-0 info font-weight-bold">
+          <span class="md:text-lg  text-sm" style="font-size: 1.2rem;">Hi,</span>
+          <span class="font-weight-normal md:text-xl  text-sm" style="font-size: 1.2rem;padding-right: .8rem; ">Pratik
+            Jain</span>
+          <button type="button" class="border-none switch-remmitter" data-toggle="tooltip" data-placement="top"
+            title="Switch Remmitter">
+            <img width="30" height="30"
+              src="https://visualpharm.com/assets/709/Change%20User-595b40b65ba036ed117d2a53.svg" class=""
+              fill="#ff0000">
+
+
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex Name flex-wrap align-items-start bg-gradient bg-light p-4 rounded mb-3 md:gap-5 gap-2">
+
+      <p class="bg-white shadow-sm p-2 fw-bold me-3 md:text-xl text-sm">Remitter Number<span
+          class="d-block font-weight-normal text-muted  text-sm sm:text-lg" id="confidentail"
+          style="cursor: pointer;">9821404561</span></p>
+      <p class="bg-white bg-gradient-custom shadow-sm p-2 fw-bold me-3 md:text-xl text-sm">Available Balance<span
+          class="d-block  font-weight-normal text-muted  text-sm sm:text-lg" id="confidentail"
+          style="cursor: pointer;">24999</span></p>
+      <p class="bg-gradient-custom bg-white shadow-sm p-2 r fw-bold me-3 md:text-xl text-sm ">Limit<span
+          class="d-block  font-weight-normal text-muted  text-sm sm:text-lg" id="confidential"
+          style="cursor: pointer;">25000</span></p>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div
+    class="mx-auto lg:m-0 pt-1 pb-0  flex w-full m-auto justify-evenly lg:flex-row flex-col lg:items-start items-center ">
+    <div class="tab-container">
+      <!-- Tabs navs -->
+      <ul class="nav nav-tabs custom-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active md:text-sm text-xs" id="home-tab" data-toggle="tab" href="#home" role="tab"
+            aria-controls="home" aria-selected="true"><img width="40" height="40"
+              src="./image/add-male-user-color-icon.svg" class="mr-2">Add Banneficiary</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link md:text-sm text-xs" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+            aria-controls="profile" aria-selected="false"><img width="40" height="40"
+              src="./image/wire-transfer-icon.svg" class="mr-2">Fund Transfer</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active " id="home" role="tabpanel" aria-labelledby="home-tab">
+          <form class="forms roboto" id="add-banneficiary-form">
+            <div class="form-group ">
+              <label for="selectInput " class="text-my-primary">Select Bank</label>
+              <select class="form-control" id="selectInput">
+                <option value="" disabled selected>Select bank</option>
+                <option value="HDFC">HDFC</option>
+                <option value="State Bank of India">State Bank of India</option>
+                <option value="Bank of Maharashtra">Bank of Maharashtra</option>
+              </select>
+            </div>
+
+            <div class="form-group ">
+              <label for="numberInput1" class="text-my-primary">Account Number</label>
+              <input type="number" class="form-control" id="numberInput1" placeholder="Enter your Acc/No.">
+            </div>
+
+            <div class="form-group">
+              <label for="numberInput2" class="text-my-primary">IFSC code</label>
+              <input type="number" class="form-control verify-input" id="numberInput2" placeholder="Enter IFSC code">
+              <div class="p-2 flex w-full" style="justify-content: flex-end;">
+                <div>
+                  <a class="" href="# r" class="custom-link justify-center">
+                 
+                    Verify!</a> <img width="18" height="15" src="./image/verified-symbol-icon.svg">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="textInput" class="text-my-primary">Banneficiary Name</label>
+              <input type="text" class="form-control" id="textInput" placeholder="Enter Banneficiary Name">
+            </div>
+            <div class="form-group">
+              <label for="numberInput" class="text-my-primary">Banneficiary's Mobile Number</label>
+              <input type="number" class="form-control" id="numberInput" value="9082871677" readonly>
+            </div>
+            <div class="text-center flex justify-evenly">
+              <div><button class="form-btn clear" data-toggle="tooltip" data-placement="top"
+                  title="Clear Form">Clear</button></div>
+              <div><button type="submit" class="form-btn" data-toggle="tooltip" data-placement="top"
+                  title="Replace Banneficiary">Replace</button></div>
+
+            </div>
+          </form>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div>
+            <form class="forms roboto ">
+
+              <div class="form-group">
+                <label for="textInput" class="text-my-primary">Banneficiary Name</label>
+                <input type="text" class="form-control" id="textInput" placeholder="Enter Banneficiary Name">
+              </div>
+              <div class="form-group">
+                <label for="numberInput1" class="text-my-primary">Account Number</label>
+                <input type="number" class="form-control" id="numberInput1" placeholder="Enter your Acc/No.">
+              </div>
+
+              <div class="form-group">
+                <label for="numberInput2" class="text-my-primary">IFSC code</label>
+                <input type="number" class="form-control" id="numberInput2" placeholder="Enter IFSC code">
+              </div>
+
+
+              <div class="form-group ">
+                <label for="selectInput " class="text-my-primary">Select Bank </label>
+                <select class="form-control" id="selectInput">
+                  <option value="" disabled selected>Select bank</option>
+                  <option value="HDFC">HDFC</option>
+                  <option value="State Bank of India">State Bank of India</option>
+                  <option value="Bank of Maharashtra">Bank of Maharashtra</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="numberInput" class="text-my-primary">Amount</label>
+                <input type="number" class="form-control" id="numberInput" value="9082871677" readonly>
+              </div>
+              <div class="text-center flex justify-evenly">
+                <div><button class="form-btn clear" data-toggle="tooltip" data-placement="top"
+                    title="Clear Form">Clear</button></div>
+                <div><button type="submit " class="form-btn proceed" data-toggle="tooltip" data-placement="top"
+                    title="Proceed">Proceed</button></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-container">
+
+      <ul class="nav nav-tabs custom-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active md:text-sm text-xs" id="all-list-tab" data-toggle="tab" href="#my-act-list"
+            role="tab" aria-controls="my-act-list " aria-selected="true">
+            <img width="30" height="40" src="./image/light-bulb-color-icon.svg" class="mr-2">Active Banneficiary
+            List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link md:text-sm text-xs" id="all-list-tab" data-toggle="tab" href="#my-all-list" role="tab"
+            aria-controls="my-all-list" aria-selected="false"><img width="15" height="40"
+              src="./image/grid-view-icon.svg" class="mr-2" >All Banneficiary List</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent" style="padding: 1rem; border: none;height: 37.4rem;">
+        <div class="tab-pane fade show active " style="height: 100%;" id="my-act-list" id="all-list-tab" role="tabpanel"
+          aria-labelledby="my-act-list-tab">
+          <div style="height: 90%;">
+            <div style="padding-bottom:.8rem;display:flex;justify-content: center;">
+              <form class="form-inline my-2 my-lg-0" id="search">
+                <input class="form-control mr-sm-2" id="serchInput" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+            <div id="main2" style="display: grid; grid-template-columns: 1fr 1fr;place-items: center; 
+          max-height: 100%; overflow: scroll;row-gap: 2rem; column-gap: 0rem; margin: auto;">
+
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="my-all-list" id="all-list-tab" style="height: 100%;" role="tabpanel"
+          aria-labelledby="my-all-list-tab">
+          <div style="height: 90%;">
+            <div >
+              <div style="padding-bottom:.8rem;display:flex;justify-content: center;">
+                <form class="form-inline my-2 my-lg-0" id="search">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+            <div id="main3" style="display: grid; grid-template-columns: 1fr 1fr;place-items: center; 
+            max-height: 100%; overflow: scroll;row-gap: 2rem; column-gap: 0rem; margin: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="activeList.js"></script>
+<script src="allList.js"></script>
+<script src="script.js"></script>
+
+
+</html>
